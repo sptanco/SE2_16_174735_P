@@ -1,0 +1,17 @@
+{
+  "name": "mymodule",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stefano Postal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "util": "^0.10.3",
+    "bind": "^0.1.7"
+  }
+}

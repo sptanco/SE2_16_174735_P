@@ -1,0 +1,46 @@
+        h1{
+            color: darkorange;   
+            text-align: center;
+        }
+        h3{
+            color: darkorange;   
+            text-align: center;
+        }
+        h4{
+            color: darkorange;   
+            text-align: center;
+        }
+
+	label{
+	    font-size: 30px;
+	
+	}
+
+	button{
+	    height: 80px;
+	}
+
+        div.main{
+            height: 800px;
+            width: 450px;
+            border: 2px solid black;
+            padding: 20px;
+            position:absolute;
+            top:100;
+            left:100;
+            overflow:hidden;
+        }
+
+	.distanziale{
+		text-align: center;
+	}
+
+        #bcontinua{
+            
+            margin-left: 150px;
+        }
+
+	#star{
+	    height: 40px;
+            width: 40px;
+	}
