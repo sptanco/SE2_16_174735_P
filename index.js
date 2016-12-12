@@ -153,8 +153,8 @@ app.use('/effettuaOrdine', function(request, response)
 {
 
 	//get giorno attuale e lista ordinazioni
-	var o = "erroreO";
-	var g = "erroreG";
+	var o = "";
+	var g = "";
 	if ( typeof request.body !== 'undefined' && request.body){
 				
 		if ( typeof request.body.ord !== 'undefined' && request.body.ord){
@@ -164,27 +164,44 @@ app.use('/effettuaOrdine', function(request, response)
 			g = request.body.giorno;
 		}
 	}	
-	var ordinazione =[]; 
-	ordinazione = o.split(",");
+	
 
-	//salviamo l'ordinazione
-	ordini.push({giorno:g,ordine:ordinazione});
-	var ig = indiceGiorno(g);
-	giorni[ig].ordinato = true;
-
-	//passiamo alla pagina info
-    	bind.toFile('views/info.tpl', 
-	{
+	if(!o){
+		//passiamo alla pagina info
+    		bind.toFile('views/info.tpl', 
+		{
         	//set up parameters
-	    info : "ORDINAZIONE EFFETTUATA!"
-   	 }, 
-    	function(data) 
-    	{
-        	//write response
-        	response.writeHead(200, {'Content-Type': 'text/html'});
-        	response.end(data);
-    	});
+	    	info : "NESSUNA PIETANZA SELEZIONATA"
+   	 	}, 
+    		function(data) 
+    		{
+        		//write response
+        		response.writeHead(200, {'Content-Type': 'text/html'});
+        		response.end(data);
+    		});
+	}else{
 
+		var ordinazione =[]; 
+		ordinazione = o.split(",");
+	
+		//salviamo l'ordinazione
+		ordini.push({giorno:g,ordine:ordinazione});
+		var ig = indiceGiorno(g);
+		giorni[ig].ordinato = true;
+	
+		//passiamo alla pagina info
+	    	bind.toFile('views/info.tpl', 
+		{
+	        	//set up parameters
+		    info : "ORDINAZIONE EFFETTUATA!"
+	   	 }, 
+	    	function(data) 
+	    	{
+	        	//write response
+	        	response.writeHead(200, {'Content-Type': 'text/html'});
+	        	response.end(data);
+	    	});
+	}
 
 
 });
