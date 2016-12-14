@@ -47,7 +47,7 @@
         <br/><br/>
         <br/><br/>
         <br/><br/>
-        <form action="http://127.0.0.1:1337/" method="post">
+        <form action="/" method="post">
         	<button class="btn btn-info" id="bhome"></butto> <img src="img/home.png"> </button>
         </form>
         
