@@ -11,3 +11,4 @@ PER HEROKU
 
 NOTE PER L'UTILIZZO
 1) Risizare la pagina web per avere il massimo dell'esperienza (CTRL-)
+2) Usare uno smartphone
