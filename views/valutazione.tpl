@@ -17,7 +17,7 @@
 	<h1>(:piatto:)</h1>
 <br/>
 
-    <form action="http:\//127.0.0.1:1337/valuta" method="post">
+    <form action="/valuta" method="post">
 	<input type="hidden" name="indice" value="(:indice:)">	
 	<input type="hidden" name="giorno" value="(:giorno:)">
 
