@@ -13,7 +13,7 @@
         <h1>TE GHAI FAM?!</h1>
 
 	<br/>
-	<form action="http://127.0.0.1:1337/" method="post"> 
+	<form action="/" method="post"> 
  		<fieldset>
   			Giorno corrente:
  			<select name="giornoAttuale" onchange="this.form.submit()">
