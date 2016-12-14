@@ -3,7 +3,8 @@
     <header>
     <title>Home</title>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/cssMenu.css" rel="stylesheet">    
+    <link href="css/cssMenu.css" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     </header>
     
     
