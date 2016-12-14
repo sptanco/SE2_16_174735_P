@@ -4,7 +4,7 @@
     <title>Home</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/cssInfo.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=0.8"> 
     </header>
     
     
