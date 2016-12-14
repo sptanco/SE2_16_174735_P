@@ -131,7 +131,7 @@
           
                 </div>
             
-                <div class="col-sm-4" >
+                <div class="col-xs-4 bottoni" >
                     <form action="/effettuaOrdine" method="post">
 			<input type="hidden" id="ord" name="ord">			
                         <input type="hidden" name ="giorno" value="(:giorno:)">
