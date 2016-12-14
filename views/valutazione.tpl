@@ -4,7 +4,7 @@
     <title>Valutazione (:giorno:)</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/cssValuta.css" rel="stylesheet">        
-
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     </header>
     
     
