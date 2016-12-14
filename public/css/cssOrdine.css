@@ -97,3 +97,12 @@
 		padding-left: 6px;
 	}
 
+	.bottoni{
+	        padding: 10px;
+                overflow:hidden;
+                height: 130px;
+                width: 140px;
+		border: yellow 1px;
+
+	}
+
