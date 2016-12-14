@@ -4,7 +4,7 @@
     <title>Ordine (:giorno:)</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/cssOrdine.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </header>
     
     
