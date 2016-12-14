@@ -3,29 +3,8 @@
     <header>
     <title>Home</title>
     <link href="css/bootstrap.css" rel="stylesheet">
-        
-    <style>
-        h1{
-            color: darkorange;   
-            text-align: center;
-        }
-        div.main{
-            height: 800px;
-            width: 450px;
-            border: 2px solid black;
-            padding: 20px;
-            position:absolute;
-            top:100;
-            left:100;
-            overflow:hidden;
-        }
-        #bhome{
-            
-            margin-left: 120px;
-        }
-        
-        
-    </style>
+    <link href="css/cssInfo.css" rel="stylesheet">
+  
     </header>
     
     
