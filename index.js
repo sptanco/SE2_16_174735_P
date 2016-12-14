@@ -304,7 +304,7 @@ app.use('/', function(request, response)
 			if(giorni[i].valutato){
 				val ="valutato";
 			}else{
-				val='<form action="http://127.0.0.1:1337/valuta" method="post"> <input type="hidden" name="giorno" value="'+giorni[i].giorno+'"> <input type="hidden" name="indice" value="0"> <button type="button" onclick="submit()">valuta</button></form>';
+				val='<form action="/valuta" method="post"> <input type="hidden" name="giorno" value="'+giorni[i].giorno+'"> <input type="hidden" name="indice" value="0"> <button type="button" onclick="submit()">valuta</button></form>';
 			}
 		}else{
 			ord="troppo tardi";
@@ -319,7 +319,7 @@ app.use('/', function(request, response)
 			ord = "ordinato";
 			val= "aspetta";
 		}else{
-			ord='<form action="http://127.0.0.1:1337/ordina" method="post"> <input type="hidden" name="giorno" value="'+giorni[i].giorno+'"> <button type="button" onclick="submit()">ordina</button></form>'
+			ord='<form action="/ordina" method="post"> <input type="hidden" name="giorno" value="'+giorni[i].giorno+'"> <button type="button" onclick="submit()">ordina</button></form>'
 			val="non valutabile"
 		}
 		giorni2.push({id:giorni[i].id, giorno:giorni[i].giorno, ordinato:ord, valutato:val});
