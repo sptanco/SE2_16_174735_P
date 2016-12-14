@@ -131,13 +131,13 @@
                 </div>
             
                 <div class="col-sm-4" >
-                    <form action="http://127.0.0.1:1337/effettuaOrdine" method="post">
+                    <form action="/effettuaOrdine" method="post">
 			<input type="hidden" id="ord" name="ord">			
                         <input type="hidden" name ="giorno" value="(:giorno:)">
                         <button type="submit" class="btn btn-success" id="b">ORDINA</button>
                     </form>
                     
-		    <form action="http://127.0.0.1:1337/" method="post">
+		    <form action="/" method="post">
                         <button type="submit" class="btn btn-danger" id="b" onclick="Submit()">CANCELLA</button>
 		    </form>
                     
