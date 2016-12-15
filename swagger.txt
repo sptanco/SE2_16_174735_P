@@ -1,0 +1,67 @@
+swagger: '1.0'
+info:
+  title: My API 174735
+  description: app cibo a domicilio
+  version: "1.0.0"
+# the domain of the service
+host: https://teghaifam.herokuapp.com/
+# array of all schemes that your API supports
+schemes:
+  - https
+# will be prefixed to all paths
+basePath: /
+produces:
+  - application/json
+consumes:
+  - application/json
+paths:
+  /:
+    post:
+      summary: go to home
+      description: searches an employee
+      parameters:
+        - name: giornoAttuale
+          in: formData
+          description: giorno corrente
+          required: false
+          type: string
+      responses:
+        200:
+          description: menu.tpl
+
+  /valuta:
+    post:
+      summary: valuta pietanza
+      description: searches an employee
+      parameters:
+        - name: i
+          in: formData
+          description: #pietanza
+          required: true
+          type: integer
+        - name: giorno
+          in: formData
+          description: giorno
+          required: true
+          type: string
+      responses:
+        200:
+          description: valutazione.tpl
+
+
+
+
+
+          
+definitions:
+  MyResponse:
+    properties:
+      item1:
+        type: string
+        description: first item
+      item2:
+        type: string
+        description: second item.
+      item3:
+        type: string
+        description: third item.
