@@ -18,7 +18,7 @@ paths:
   /:
     post:
       summary: go to home
-      description: searches an employee
+      description: vai alla pagina del menu e evidenzia il giorno corrente
       parameters:
         - name: giornoAttuale
           in: formData
@@ -32,7 +32,7 @@ paths:
   /valuta:
     post:
       summary: valuta pietanza
-      description: searches an employee
+      description: vai alla pagina di valutazione per giorno e indice del piatto
       parameters:
         - name: i
           in: formData
@@ -48,20 +48,49 @@ paths:
         200:
           description: valutazione.tpl
 
+  /ordine:
+    post:
+      summary: vai alla pagina di ordinazione
+      description: vai alla pagina di ordinazione in base al giorno
+      parameters:
+        - name: giorno
+          in: formData
+          description: giorno
+          required: true
+          type: string
+      responses:
+        200:
+          description: ordinazione.tpl
 
-
-
+  /effettuaOrdine:
+    post:
+      summary: effettua ordine
+      description: salva ordine sul server
+      parameters:
+        - name: ordine
+          in: formData
+          description: lista di piatti da orinare
+          required: true
+          type: string
+        - name: giorno
+          in: formData
+          description: giorno
+          required: true
+          type: string
+      responses:
+        200:
+          description: info.tpl
 
           
 definitions:
   MyResponse:
     properties:
-      item1:
+      giorni:
+        type: vettore di object
+        description: ordinazione e valutazione effettuata per giorno.
+      ordini:
         type: string
-        description: first item
-      item2:
-        type: string
-        description: second item.
-      item3:
-        type: string
-        description: third item.
+        description: ordine effettuati per giorno.
+      piatti:
+        type: vettore di objet
+        description: descrizione dei piatti.
